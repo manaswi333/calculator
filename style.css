@@ -1,0 +1,53 @@
+/*outer layer of the calculator*/
+.container {
+    max-width: 400px;
+    margin-top: 80px;
+    margin-left: 550px; 
+    box-shadow: 5px 5px 43px 17px rgb(204, 204, 238);
+}
+/*To align title of the calculator*/
+.title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family:cursive;
+}
+/*To display the box size of the calculator*/
+#display {
+    text-align: right;
+    height: 60px;
+    line-height: 90px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+/*opeartions and numbers*/
+.buttons {
+    display: grid;
+    border-bottom: 1px solid rgb(180, 169, 169);
+    border-left: 1px solid rgb(180, 169, 169);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*Adds the border to the sides*/
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+/*Display the numbers and operations*/
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*Adds colors for the background*/
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+/**Adds the colors to  the buttons*/
+.button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
